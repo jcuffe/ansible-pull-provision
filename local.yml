@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  tasks:
+  - name: install development tools and libraries
+    become: yes
+    ansible.builtin.apt:
+      package:
+        - build-essential
+  - name: install packages that I like and are somehow current in PPA
+    become: yes
+    ansible.builtin.apt:
+      package:
+        - neovim
+      state: absent
+  - name: install Glidian project dependencies
+    become: yes
+    ansible.builtin.apt:
+      package: pdftk-java=3.0.9-1
