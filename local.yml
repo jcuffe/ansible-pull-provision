@@ -1,6 +1,5 @@
 ---
 - hosts: localhost
-  warn: false
   tasks:
   - name: install development tools and libraries
     become: yes
