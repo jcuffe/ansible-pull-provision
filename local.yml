@@ -6,13 +6,16 @@
     ansible.builtin.apt:
       package:
         - build-essential
-  - name: install packages that I like and are somehow current in PPA
-    become: yes
-    ansible.builtin.apt:
-      package:
-        - neovim
-      state: absent
+        - git
+        - jq
   - name: install Glidian project dependencies
     become: yes
     ansible.builtin.apt:
-      package: pdftk-java=3.0.9-1
+      package:
+        # TODO: some of these are definitely present by default in 20.04
+        - software-properties-common
+        - curl
+        - python
+        - libreoffice
+        - mysql-client
+        - pdftk-java=3.0.9-1
