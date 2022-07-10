@@ -1,6 +1,6 @@
 ---
 - hosts: localhost
-  gather_facts: no
+  warn: false
   tasks:
   - name: install development tools and libraries
     become: yes
