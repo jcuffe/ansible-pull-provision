@@ -1,0 +1,12 @@
+---
+- name: install Glidian project dependencies
+  become: yes
+  ansible.builtin.apt:
+    package:
+      # TODO: some of these are definitely present by default in 20.04
+      - software-properties-common
+      - curl
+      - python
+      - libreoffice
+      - mysql-client
+      - pdftk-java=3.0.9-1

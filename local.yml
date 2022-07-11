@@ -1,32 +1,6 @@
 ---
 - hosts: localhost
   roles:
-    - fish
-  tasks:
-    - name: install development tools and libraries
-      become: yes
-      ansible.builtin.apt:
-        package:
-          - bison
-          - build-essential
-          - gettext
-          - git
-          - jq
-          - libreadline-dev
-          - libpcre2-dev
-          - libevent
-          - libevent-dev
-          - ncurses
-          - ncurses-dev
-          - pkg-config
-    - name: install Glidian project dependencies
-      become: yes
-      ansible.builtin.apt:
-        package:
-          # TODO: some of these are definitely present by default in 20.04
-          - software-properties-common
-          - curl
-          - python
-          - libreoffice
-          - mysql-client
-          - pdftk-java=3.0.9-1
+    # - fish
+    - glidian
+    - kakoune
