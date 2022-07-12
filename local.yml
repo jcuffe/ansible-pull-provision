@@ -1,6 +1,7 @@
 ---
 - hosts: localhost
   roles:
-    # - fish
-    - glidian
+    - fish
+    - yq
     - kakoune
+    # - glidian
