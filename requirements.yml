@@ -5,12 +5,6 @@
 - name: tmux
   src: git@github.com:jcuffe/ansible-role-tmux.git
   scm: git
-- name: yq
-  src: git@github.com:jcuffe/ansible-role-yq.git
-  scm: git
 - name: fish
   src: git@github.com:jcuffe/ansible-role-fish.git
-  scm: git
-- name: glidian
-  src: git@github.com:jcuffe/ansible-role-glidian.git
   scm: git

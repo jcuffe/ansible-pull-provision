@@ -2,6 +2,5 @@
 - hosts: localhost
   roles:
     - fish
-    - yq
     - kakoune
-    # - glidian
+    - tmux
