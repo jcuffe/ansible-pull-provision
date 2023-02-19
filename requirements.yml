@@ -1,4 +1,7 @@
 ---
+- name: git
+  src: git@github.com:jcuffe/ansible-role-git.git
+  scm: git
 - name: kakoune
   src: git@github.com:jcuffe/ansible-role-kakoune.git
   scm: git
@@ -7,4 +10,7 @@
   scm: git
 - name: fish
   src: git@github.com:jcuffe/ansible-role-fish.git
+  scm: git
+- name: mysql-5-7
+  src: git@github.com:jcuffe/ansible-role-mysql-5-7.git
   scm: git
