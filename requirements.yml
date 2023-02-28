@@ -14,3 +14,6 @@
 - name: mysql-5-7
   src: git@github.com:jcuffe/ansible-role-mysql-5-7.git
   scm: git
+- name: rust
+  src: git@github.com:jcuffe/ansible-role-rust.git
+  scm: git
