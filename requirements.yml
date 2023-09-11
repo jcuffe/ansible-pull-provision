@@ -1,19 +1,25 @@
 ---
-- name: git
-  src: git@github.com:jcuffe/ansible-role-git.git
+# - name: git
+#   src: git@github.com:jcuffe/ansible-role-git.git
+#   scm: git
+# - name: go
+#   src: git@github.com:jcuffe/ansible-role-go.git
+#   scm: git
+- name: zig
+  src: git@github.com:jcuffe/ansible-role-zig.git
   scm: git
-- name: kakoune
-  src: git@github.com:jcuffe/ansible-role-kakoune.git
-  scm: git
-- name: tmux
-  src: git@github.com:jcuffe/ansible-role-tmux.git
-  scm: git
+# - name: kakoune
+#   src: git@github.com:jcuffe/ansible-role-kakoune.git
+#   scm: git
+# - name: tmux
+#   src: git@github.com:jcuffe/ansible-role-tmux.git
+#   scm: git
 - name: fish
   src: git@github.com:jcuffe/ansible-role-fish.git
   scm: git
-- name: mysql-5-7
-  src: git@github.com:jcuffe/ansible-role-mysql-5-7.git
-  scm: git
-- name: rust
-  src: git@github.com:jcuffe/ansible-role-rust.git
-  scm: git
+# - name: mysql-5-7
+#   src: git@github.com:jcuffe/ansible-role-mysql-5-7.git
+#   scm: git
+# - name: rust
+#   src: git@github.com:jcuffe/ansible-role-rust.git
+#   scm: git
