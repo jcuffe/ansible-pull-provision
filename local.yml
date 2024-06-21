@@ -1,11 +1,11 @@
 ---
 - hosts: localhost
   roles:
-    # - git
-    # - go
+    - git
+    - go
     - zig
     - fish
-    # - kakoune
-    # - tmux
-    # - mysql-5-7
-    # - rust
+    - kakoune
+    - tmux
+    - mysql-5-7
+    - rust
